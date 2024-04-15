@@ -20,7 +20,7 @@ export default function Tasks() {
 
         </div>
 
-        <div className="border-slate-400 border-dotted border-[1px] rounded-md min-h-16 w-1/3 overflow-hidden">
+        <div className="border-slate-400 border-dotted border-[1px] rounded-md min-h-16 w-1/3 overflow-hidden shadow-md shadow-slate-500/80">
           <p className="h-12 bg-slate-400 text-slate-100 ">General</p>
           <div>
             <TaskList list={genTasks} removeTask={genRemoveTask} slashTask={genSlashTask} />

@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { addTask as addGenTask} from "../features/task/taskSlice";
 import { addTask as addImpTask } from "../features/task/impTaskSlice";
 import { v4 as uuidv4 } from 'uuid';
+import toast from 'react-hot-toast'
 
 export default function TaskInput() {
 
@@ -14,6 +15,12 @@ export default function TaskInput() {
 
   const handleTask = () => {
     // taskname and taskText we have with default option 
+
+    if(taskname == '' || taskname == ' '){
+      toast('Taskname blank!', {className : 'bg-slate-300 text-slate-600'});
+      return; 
+    }
+
     const taskObj = {
       taskname,
       taskText,

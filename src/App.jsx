@@ -1,3 +1,4 @@
+import { Toaster } from 'react-hot-toast'
 import './App.css'
 import NavBar from './components/Navbar'
 import TaskInput from './components/TaskInput'
@@ -19,6 +20,11 @@ function App() {
 
         <Tasks />
       </div>
+      <Toaster 
+        position="bottom-right"
+        reverseOrder={false} 
+      />
+
     </>
   )
 }

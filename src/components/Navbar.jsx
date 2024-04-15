@@ -8,7 +8,7 @@ export default function NavBar() {
           <span>
             things
           </span>
-          <span className="text-lg font-thin text-slate-100 -ml-[2px]">
+          <span className="text-lg font-thin text-slate-100 ">
             ToDo
           </span>
           <span>
